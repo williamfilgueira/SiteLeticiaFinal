@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Letícia Coutinho | Psicóloga</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#" aria-label="Início">
+          <span class="brand-mark" aria-hidden="true">
+            <!-- símbolo ψ -->
+            <img src="./assets/Logo.png" alt="Logo Leticia Coutinho" />
+          </span>
+          <span class="brand-texts">
+            <span class="brand-title">Letícia Coutinho</span>
+            <span class="brand-sub">Psicóloga</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav"
+          aria-label="Abrir menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="nav" class="nav">
+          <a href="#abordagem">Abordagem</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#contato">Contato</a>
+          <a href="#contato" class="btn btn-primary nav-cta">Agendar sessão</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>
+          <span>Bem-vinda ao seu</span>
+          <span class="grad">processo de cura</span>
+        </h1>
+        <p class="hero-sub">
+          Sou Letícia Coutinho, psicóloga dedicada a ajudar você a encontrar
+          equilíbrio, autoconhecimento e bem-estar emocional.
+        </p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary"
+            >Agendar primeira consulta</a
+          >
+          <a href="#abordagem" class="btn btn-outline"
+            >Conhecer minha abordagem</a
+          >
+        </div>
+
+        <ul class="hero-features">
+          <li>
+            <span class="feat-icon"
+              ><img src="./assets/brainstorm.png" alt="Icone cerebro"
+            /></span>
+            <h3>Terapia Cognitiva</h3>
+            <p>Abordagem baseada em evidências</p>
+          </li>
+          <li>
+            <span class="feat-icon"
+              ><img src="./assets/hearts.png" alt="Icone coracao"
+            /></span>
+            <h3>Acolhimento</h3>
+            <p>Ambiente seguro e empático</p>
+          </li>
+          <li>
+            <span class="feat-icon"
+              ><img src="./assets/plant.png" alt="Icone planta"
+            /></span>
+            <h3>Crescimento</h3>
+            <p>Desenvolvimento pessoal contínuo</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+      <div class="container sobre-grid">
+        <div class="sobre-text">
+          <h2 class="section-title">
+            <span>Sobre</span><br />
+            <span class="brand-emph">Letícia Coutinho</span>
+          </h2>
+          <p>
+            Sou psicóloga formada pela Universidade Federal, com especialização
+            em Terapia Cognitivo-Comportamental. Há mais de 8 anos, dedico-me ao
+            atendimento clínico, ajudando pessoas a superarem desafios
+            emocionais e conquistarem uma vida mais equilibrada.
+          </p>
+          <p>
+            Minha abordagem combina técnicas baseadas em evidências científicas
+            com um atendimento humanizado e acolhedor. Acredito que cada pessoa
+            possui recursos únicos para promover mudanças positivas em sua vida.
+          </p>
+
+          <div class="sobre-cards">
+            <div class="info-card">
+              <span class="badge"
+                ><img src="./assets/ico-formacao.svg" alt=""
+              /></span>
+              <h4>Formação</h4>
+              <p>CRP 12/34567</p>
+            </div>
+            <div class="info-card">
+              <span class="badge"
+                ><img src="./assets/ico-experiencia.svg" alt=""
+              /></span>
+              <h4>Experiência</h4>
+              <p>+8 anos de prática clínica</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre-card-grad">
+          <div class="avatar">
+            <img src="./assets/emoji-psicologa.png" alt="Letícia" />
+          </div>
+          <h5>Letícia Coutinho</h5>
+          <small>Psicóloga Clínica</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="servicos">
+      <div class="container">
+        <h2 class="section-title center">Meus Serviços</h2>
+        <p class="section-sub center">
+          Ofereço atendimento psicológico especializado e personalizado para
+          suas necessidades
+        </p>
+
+        <div class="cards-grid">
+          <!-- Card -->
+          <article class="service-card">
+            <div class="service-head">
+              <span class="badge"
+                ><img src="./assets/ico-user.svg" alt=""
+              /></span>
+              <h3>Terapia Individual</h3>
+            </div>
+            <p>
+              Atendimento personalizado para adultos, focado em suas
+              necessidades específicas.
+            </p>
+            <ul class="bullets">
+              <li>Sessões de 50 minutos</li>
+              <li>Abordagem TCC</li>
+              <li>Plano terapêutico individualizado</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline w-100">Saiba mais</a>
+          </article>
+
+          <!-- Card destaque -->
+          <article class="service-card highlight">
+            <div class="chip">Especialidade</div>
+            <div class="service-head">
+              <span class="badge"
+                ><img src="./assets/ico-ansiedade.svg" alt=""
+              /></span>
+              <h3>Terapia para Ansiedade</h3>
+            </div>
+            <p>
+              Tratamento especializado para transtornos de ansiedade e síndrome
+              do pânico.
+            </p>
+            <ul class="bullets">
+              <li>Técnicas de relaxamento</li>
+              <li>Reestruturação cognitiva</li>
+              <li>Prevenção de recaídas</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline w-100">Saiba mais</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-head">
+              <span class="badge"
+                ><img src="./assets/ico-depressao.svg" alt=""
+              /></span>
+              <h3>Terapia para Depressão</h3>
+            </div>
+            <p>
+              Suporte profissional para superar momentos difíceis e recuperar o
+              bem-estar.
+            </p>
+            <ul class="bullets">
+              <li>Ativação comportamental</li>
+              <li>Mudança de padrões negativos</li>
+              <li>Fortalecimento da autoestima</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline w-100">Saiba mais</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-head">
+              <span class="badge"
+                ><img src="./assets/ico-carreira.svg" alt=""
+              /></span>
+              <h3>Orientação de Carreira</h3>
+            </div>
+            <p>
+              Apoio para decisões profissionais e desenvolvimento de carreira.
+            </p>
+            <ul class="bullets">
+              <li>Autoconhecimento profissional</li>
+              <li>Planejamento de carreira</li>
+              <li>Gestão de transições</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline w-100">Saiba mais</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA atendimento -->
+    <section class="cta">
+      <div class="container cta-card">
+        <h3>Atendimento Online e Presencial</h3>
+        <p>
+          Flexibilidade para se adequar à sua rotina. Sessões presenciais em
+          consultório próprio ou online via plataforma segura.
+        </p>
+        <div class="cta-actions">
+          <a href="#contato" class="btn btn-primary"
+            >Agendar consulta presencial</a
+          >
+          <a href="#contato" class="btn btn-outline">Agendar consulta online</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Abordagem -->
+    <section id="abordagem" class="abordagem">
+      <div class="container">
+        <h2 class="section-title center">Minha Abordagem</h2>
+        <p class="section-sub center">
+          Utilizo a Terapia Cognitivo-Comportamental (TCC), uma abordagem
+          comprovadamente eficaz que ajuda a identificar e modificar padrões de
+          pensamento.
+        </p>
+
+        <div class="pillars">
+          <div class="pillar">
+            <span class="badge"
+              ><img src="./assets/ico-cerebro.svg" alt=""
+            /></span>
+            <h4>Terapia Cognitivo-Comportamental</h4>
+            <p>
+              Abordagem baseada em evidências científicas que trabalha a relação
+              entre pensamentos, sentimentos e comportamentos.
+            </p>
+          </div>
+          <div class="pillar">
+            <span class="badge"
+              ><img src="./assets/ico-acolhimento.svg" alt=""
+            /></span>
+            <h4>Acolhimento Humanizado</h4>
+            <p>
+              Ambiente seguro e sem julgamentos, para expressar seus sentimentos
+              livremente.
+            </p>
+          </div>
+          <div class="pillar">
+            <span class="badge"
+              ><img src="./assets/ico-alvo.svg" alt=""
+            /></span>
+            <h4>Foco em Resultados</h4>
+            <p>Metas claras e mensuráveis ao longo do processo terapêutico.</p>
+          </div>
+          <div class="pillar">
+            <span class="badge"
+              ><img src="./assets/ico-ferramenta.svg" alt=""
+            /></span>
+            <h4>Técnicas Práticas</h4>
+            <p>Ferramentas e estratégias aplicáveis no dia a dia.</p>
+          </div>
+        </div>
+
+        <div class="steps">
+          <h3>Como funciona o processo terapêutico?</h3>
+          <div class="steps-grid">
+            <div class="step">
+              <span class="num">1</span>
+              <h4>Acolhimento</h4>
+              <p>Primeira sessão para objetivos e expectativas.</p>
+            </div>
+            <div class="step">
+              <span class="num">2</span>
+              <h4>Desenvolvimento</h4>
+              <p>Técnicas específicas para alcançar suas metas.</p>
+            </div>
+            <div class="step">
+              <span class="num">3</span>
+              <h4>Transformação</h4>
+              <p>Habilidades para lidar melhor com os desafios.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="depoimentos">
+      <div class="container">
+        <h2 class="section-title center">Depoimentos</h2>
+        <p class="section-sub center">
+          Veja o que meus pacientes dizem sobre sua experiência terapêutica
+        </p>
+
+        <div class="testimonials">
+          <article class="t-card">
+            <p class="stars">★★★★★</p>
+            <blockquote>
+              “A terapia com a Letícia mudou completamente minha perspectiva
+              sobre a vida. Aprendi a lidar melhor com minha ansiedade e hoje me
+              sinto muito mais confiante.”
+            </blockquote>
+            <div class="author">
+              <span class="avatar-mini">M</span>
+              <div><strong>Maria S.</strong></div>
+            </div>
+          </article>
+          <article class="t-card">
+            <p class="stars">★★★★★</p>
+            <blockquote>
+              “Profissional extremamente competente e acolhedora. O consultório
+              é confortável e as sessões foram muito produtivas.”
+            </blockquote>
+            <div class="author">
+              <span class="avatar-mini">J</span>
+              <div><strong>João P.</strong></div>
+            </div>
+          </article>
+          <article class="t-card">
+            <p class="stars">★★★★★</p>
+            <blockquote>
+              “Recomendo muito! A abordagem da Letícia é prática e eficaz. Em
+              poucos meses consegui superar problemas que me acompanhavam há
+              anos.”
+            </blockquote>
+            <div class="author">
+              <span class="avatar-mini">A</span>
+              <div><strong>Ana C.</strong></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="metrics">
+          <div class="metric">
+            <strong>200+</strong><span>Pacientes atendidos</span>
+          </div>
+          <div class="metric">
+            <strong>95%</strong><span>Taxa de satisfação</span>
+          </div>
+          <div class="metric">
+            <strong>8+</strong><span>Anos de experiência</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+      <div class="container contato-grid">
+        <div class="form-card">
+          <h3>Agendar Consulta</h3>
+          <form action="#" method="post" class="form">
+            <div class="grid-2">
+              <label
+                >Nome completo
+                <input type="text" placeholder="Seu nome" />
+              </label>
+              <label
+                >Telefone
+                <input type="tel" placeholder="(00) 00000-0000" />
+              </label>
+            </div>
+            <label
+              >E-mail
+              <input type="email" placeholder="seu@email.com" />
+            </label>
+            <label
+              >Preferência de atendimento
+              <select>
+                <option>Presencial</option>
+                <option>Online</option>
+              </select>
+            </label>
+            <label
+              >Mensagem (opcional)
+              <textarea
+                rows="4"
+                placeholder="Conte um pouco sobre o que te trouxe até aqui..."
+              ></textarea>
+            </label>
+            <button class="btn btn-primary w-100" type="submit">
+              Enviar mensagem
+            </button>
+          </form>
+        </div>
+
+        <aside class="contact-side">
+          <div class="side-card">
+            <div class="side-head">
+              <span class="badge"
+                ><img src="./assets/ico-pin.svg" alt=""
+              /></span>
+              <h4>Localização</h4>
+            </div>
+            <p>
+              Rua das Flores, 123 – Centro<br />Cidade, Estado – CEP 12345-678
+            </p>
+          </div>
+
+          <div class="side-card">
+            <div class="side-head">
+              <span class="badge"
+                ><img src="./assets/ico-phone.svg" alt=""
+              /></span>
+              <h4>Telefone</h4>
+            </div>
+            <p>(00) 00000-0000<br /><small>WhatsApp disponível</small></p>
+          </div>
+
+          <div class="side-card">
+            <div class="side-head">
+              <span class="badge"
+                ><img src="./assets/ico-clock.svg" alt=""
+              /></span>
+              <h4>Horários</h4>
+            </div>
+            <p>Segunda a Sexta: 8h às 18h<br />Sábado: 8h às 12h</p>
+          </div>
+
+          <div class="promo">
+            <h4>Primeira consulta com desconto</h4>
+            <p>Agende sua primeira sessão com 20% de desconto</p>
+            <a href="#contato" class="btn btn-primary w-100"
+              >Agendar primeira consulta</a
+            >
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="f-col">
+          <a href="#" class="brand brand-invert">
+            <img src="./assets/logo-borboleta.svg" alt="" class="brand-icon" />
+            <div class="brand-text">
+              <strong>Letícia Coutinho</strong>
+              <small>Psicóloga</small>
+            </div>
+          </a>
+          <p>
+            Cuidando da sua saúde mental com profissionalismo, acolhimento e
+            técnicas baseadas em evidências científicas.
+          </p>
+          <small>CRP 12/34567</small>
+        </div>
+
+        <div class="f-col">
+          <h4>Links Rápidos</h4>
+          <ul class="f-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#abordagem">Abordagem</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col">
+          <h4>Contato</h4>
+          <ul class="f-links">
+            <li>Rua das Flores, 123 – Centro</li>
+            <li>(00) 00000-0000</li>
+            <li>contato@leticiacoutinho.com.br</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© 2024 Letícia Coutinho. Todos os direitos reservados.</span>
+        <span>Feito com 💛 para cuidar da sua saúde mental</span>
+      </div>
+    </footer>
+
+    <script>
+      // Menu hambúrguer
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.getElementById("nav");
+      toggle.addEventListener("click", () => {
+        const open = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!open));
+        document.body.classList.toggle("nav-open");
+      });
+      // Fechar ao clicar em um link (mobile)
+      nav.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          document.body.classList.remove("nav-open");
+          toggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    </script>
+  </body>
+</html>
