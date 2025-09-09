@@ -1,4 +1,3 @@
-/* Base / Tokens */
 :root {
   --bg: #e7f1fb;
   --surface: #ffffff;
@@ -43,7 +42,6 @@ a {
   padding: 0 20px;
 }
 
-/* Buttons */
 .btn {
   display: inline-block;
   padding: 12px 18px;
@@ -80,7 +78,6 @@ a {
   width: 100%;
 }
 
-/* Header */
 .site-header {
   position: sticky;
   top: 0;
@@ -165,7 +162,6 @@ a {
   background: #111;
 }
 
-/* Mobile nav */
 @media (max-width: 880px) {
   .nav {
     position: fixed;
@@ -186,9 +182,8 @@ a {
   }
 }
 
-/* Hero */
 .hero {
-  min-height: 100svh; /* 100% da altura visível, robusto em mobile */
+  min-height: 100svh; 
   display: grid;
   place-items: center;
   padding: 72px 0 40px;
@@ -299,7 +294,6 @@ a {
   transition: transform 0.3s;
 }
 
-/* Animação de leve sobe/desce */
 @keyframes bounceY {
   0%,
   100% {
@@ -310,7 +304,6 @@ a {
   }
 }
 
-/* O resto começa “escondido” e entra quando houver scroll */
 #after-hero {
   opacity: 0;
   transform: translateY(24px);
@@ -323,7 +316,6 @@ a {
   transform: none;
 }
 
-/* (Opcional) snap suave entre hero e próxima seção */
 html {
   scroll-snap-type: y proximity;
 }
@@ -332,7 +324,6 @@ section {
   scroll-margin-top: 20px;
 }
 
-/* Section util */
 .section-title {
   color: var(--txt);
   font-size: clamp(1.6rem, 1.4rem + 1.5vw, 2.4rem);
@@ -365,7 +356,6 @@ section {
   font-size: 1.5em;
 }
 
-/* Sobre */
 .sobre {
   padding: 64px 0;
 }
@@ -451,7 +441,6 @@ section {
   }
 }
 
-/* Serviços */
 .servicos {
   padding: 64px 0;
 }
@@ -501,7 +490,6 @@ section {
   }
 }
 
-/* CTA */
 .cta {
   padding: 50px 0;
   color: var(--muted2);
@@ -527,7 +515,6 @@ p {
   margin-top: 12px;
 }
 
-/* Abordagem */
 .abordagem {
   padding: 64px 0;
 }
@@ -591,7 +578,6 @@ p {
   }
 }
 
-/* Contato */
 .contato {
   padding: 80px 0;
 }
@@ -665,7 +651,6 @@ p {
   }
 }
 
-/* Footer */
 .footer {
   background: #2f3743;
   color: #d7dee8;
@@ -709,8 +694,7 @@ p {
   }
 }
 
-/* carrossel */
-/* container básico */
+
 .depoimentos {
   padding: 64px 0;
 }
@@ -718,7 +702,6 @@ p {
   position: relative;
 }
 
-/* setas */
 .t-nav {
   position: absolute;
   top: 95%;
@@ -743,17 +726,14 @@ p {
   right: 8px;
 }
 
-/* viewport (scroll container) */
 .t-viewport {
-  overflow: hidden; /* evita “sangrar” no desktop */
-  /* overflow-x: auto; permitindo gesto no touch */
+  overflow: hidden; 
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding: 25px 0; /* respiro para sombra do card */
+  padding: 25px 0; 
 }
 
-/* trilha */
 .t-track {
   display: flex;
   gap: 16px;
@@ -762,9 +742,9 @@ p {
   list-style: none;
 }
 
-/* cada slide */
+
 .t-slide {
-  flex: 0 0 85%; /* largura do “card” (mobile) */
+  flex: 0 0 85%;
   scroll-snap-align: center;
 }
 
@@ -779,7 +759,6 @@ p {
   }
 }
 
-/* card de depoimento */
 .t-card {
   background: #fff;
   border: 1px solid #eee;
@@ -803,7 +782,7 @@ p {
   border-radius: 999px;
   display: inline-grid;
   place-items: center;
-  background: #e9efff; /* placeholder; depois troca por foto */
+  background: #e9efff; 
   color: #3b5ed7;
   font-weight: 700;
 }
@@ -817,10 +796,9 @@ blockquote {
 .stars {
   margin: 0;
   letter-spacing: 2px;
-  color: #f5a623; /* dourado */
+  color: #f5a623; 
 }
 
-/* dots */
 .t-dots {
   display: flex;
   justify-content: center;
@@ -838,5 +816,5 @@ blockquote {
 .t-dots > button[aria-selected="true"] {
   width: 22px;
   border-radius: 6px;
-  background: #3b5ed7; /* cor da marca, ajuste */
+  background: #3b5ed7; 
 }
