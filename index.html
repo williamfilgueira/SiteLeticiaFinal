@@ -87,7 +87,9 @@
           </li>
         </ul>
       </div>
-      <button class="scroll-down" aria-label="Role para ver mais"><img src="./assets/seta.png" alt="icone seta"></button>
+      <button class="scroll-down" aria-label="Role para ver mais">
+        <img src="./assets/seta.png" alt="icone seta" />
+      </button>
     </section>
 
     <div id="after-hero">
@@ -248,6 +250,91 @@
               class="btn btn-outline"
               >Agendar consulta online</a
             >
+          </div>
+        </div>
+      </section>
+
+      <section id="localizacao" class="localizacao">
+        <div class="container">
+          <div class="localizacao-texto">
+            <span class="kicker">Como chegar</span>
+            <h2 class="section-title">Visite nossa clínica</h2>
+            <p class="section-sub">
+              Será um prazer receber você! Nosso espaço foi pensado para acolher
+              com conforto e privacidade.
+            </p>
+
+            <ul class="localizacao-info">
+              <li>
+                <!-- ícone pin -->
+                <img
+                  src="./assets/location.png"
+                  alt="Icone de localização"
+                  class="icon"
+                />
+                <div>
+                  <strong>Endereço</strong><br />
+                  Av. Lúcio Meira, 330 - Sala 306 - Várzea, Teresópolis - RJ,
+                  25953-001
+                </div>
+              </li>
+              <li>
+                <img
+                  src="./assets/time.png"
+                  alt="Ícone de horário"
+                  class="icon"
+                />
+                <div>
+                  <strong>Horário</strong><br />
+                  Seg a Sex, 8h–19h (com agendamento)
+                </div>
+              </li>
+            </ul>
+
+            <div class="localizacao-acoes">
+              <a
+                class="btn"
+                href="https://www.google.com/maps/search/?api=1&query=R.+Prefeito+Sebasti%C3%A3o+Teixeira%2C+123%2C+Teres%C3%B3polis+-+RJ"
+                target="_blank"
+                rel="noopener"
+              >
+                Abrir no Google Maps
+              </a>
+              <a class="btn btn-primary" href="#contato"
+                >Agendar uma consulta</a
+              >
+            </div>
+            <div class="mapa">
+              <!-- Substitua o src pelo embed do endereço exato -->
+              <iframe
+                title="Mapa – Clínica Letícia Coutinho"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+                src="https://www.google.com/maps?q=R.+Prefeito+Sebasti%C3%A3o+Teixeira%2C+123%20-%20V%C3%A1rzea%2C%20Teres%C3%B3polis%20-%20RJ&output=embed"
+              >
+              </iframe>
+            </div>
+
+            <small class="mapa-nota">
+              Caso o mapa não carregue,
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=R.+Prefeito+Sebasti%C3%A3o+Teixeira%2C+123%2C+Teres%C3%B3polis+-+RJ"
+                target="_blank"
+                rel="noopener"
+                >clique aqui para abrir no Google Maps</a
+              >.
+            </small>
+          </div>
+
+          <div class="localizacao-midia">
+            <div class="foto-clinica">
+              <img
+                src="./assets/clínica psicologia.jpeg"
+                alt="Foto da recepção da clínica"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -418,7 +505,8 @@
                 <h4>Localização</h4>
               </div>
               <p>
-                Rua das Flores, 123 – Centro<br />Cidade, Estado – CEP 12345-678
+                Av. Lúcio Meira, 330 - Sala 306 - Várzea,<br />
+                Teresópolis - RJ, 25953-001
               </p>
             </div>
 
@@ -439,15 +527,7 @@
                 /></span>
                 <h4>Horários</h4>
               </div>
-              <p>Segunda a Sexta: 8h às 18h<br />Sábado: 8h às 12h</p>
-            </div>
-
-            <div class="promo">
-              <h4>Primeira consulta com desconto</h4>
-              <p>Agende sua primeira sessão com 20% de desconto</p>
-              <a href="#contato" class="btn btn-primary w-100"
-                >Agendar primeira consulta</a
-              >
+              <p>Segunda a Sexta: 8h às 18h<br /></p>
             </div>
           </aside>
         </div>
@@ -458,17 +538,20 @@
       <div class="container footer-grid">
         <div class="f-col">
           <a href="#" class="brand brand-invert">
-            <img src="./assets/logo-borboleta.svg" alt="" class="brand-icon" />
-            <div class="brand-text">
-              <strong>Letícia Coutinho</strong>
-              <small>Psicóloga</small>
-            </div>
+            <a class="brand" href="#" aria-label="Início">
+              <span class="brand-mark" aria-hidden="true">
+                <img src="./assets/Logo.png" alt="Logo Leticia Coutinho" />
+              </span>
+              <span class="brand-texts">
+                <span class="brand-title">Letícia Coutinho</span>
+                <span class="brand-sub">Psicóloga</span>
+              </span>
+            </a>
           </a>
           <p>
             Cuidando da sua saúde mental com profissionalismo, acolhimento e
             técnicas baseadas em evidências científicas.
           </p>
-          <small>CRP 12/34567</small>
         </div>
 
         <div class="f-col">
@@ -484,9 +567,9 @@
         <div class="f-col">
           <h4>Contato</h4>
           <ul class="f-links">
-            <li>Rua das Flores, 123 – Centro</li>
-            <li>(00) 00000-0000</li>
-            <li>contato@leticiacoutinho.com.br</li>
+            <li>RAv. Lúcio Meira, 330 - Sala 306 - </li>
+            <li>Várzea, Teresópolis - RJ</li>
+            <li>25953-001</li>
           </ul>
         </div>
       </div>
@@ -499,6 +582,6 @@
 
     <script src="script.js"></script>
     <script src="carousel.js"></script>
-    <script src="scroll.js"></script>
+    <script src="scroll-site.js"></script>
   </body>
 </html>
