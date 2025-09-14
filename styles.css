@@ -13,6 +13,7 @@
   --radius: 18px;
   --shadow: 0 10px 30px rgba(27, 39, 53, 0.08);
   --reveal-stagger: 120ms;
+  --header-h: 100px;
 }
 
 * {
@@ -22,6 +23,26 @@ html,
 body {
   margin: 0;
 }
+
+.site-header .nav-wrap {
+  padding-block: 10px;
+  min-height: unset;
+}
+.brand {
+  margin: 0;
+}
+
+html {
+  scroll-padding-top: var(--header-h);
+}
+section[id] {
+  scroll-margin-top: var(--header-h);
+}
+
+.hero {
+  min-height: calc(100svh - var(--header-h));
+}
+
 body {
   font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
@@ -77,6 +98,9 @@ a {
 }
 .w-100 {
   width: 100%;
+}
+#btn-whats {
+  text-align: center;
 }
 
 .site-header {
@@ -182,13 +206,15 @@ a {
   body.nav-open .nav {
     transform: translateY(0);
   }
+  .nav-wrap {
+    justify-content: space-around;
+  }
 }
 
 .hero {
   min-height: 100svh;
   display: grid;
   place-items: center;
-  padding: 72px 0 40px;
   background: radial-gradient(
       900px 400px at 90% 90%,
       #fff0c5 0%,
@@ -287,6 +313,10 @@ a {
     grid-template-columns: 1fr;
     gap: 14px;
   }
+
+  .hero-inner {
+    margin: 0 0 70px 0;
+  }
 }
 
 .scroll-down {
@@ -340,7 +370,6 @@ a {
 html {
   scroll-snap-type: auto;
 }
-
 
 .section-title {
   color: var(--txt);
@@ -469,6 +498,18 @@ html {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 768px) {
+  .sobre {
+    padding: 20px 0;
+  }
+  .info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 .servicos {
   padding: 64px 0;
@@ -519,6 +560,11 @@ html {
 @media (max-width: 960px) {
   .cards-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .servicos {
+    padding: 20px 0;
   }
 }
 
@@ -721,6 +767,12 @@ p {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 22px;
+}
+
+@media (max-width: 780px) {
+  .contato {
+    padding: 20px 0;
+  }
 }
 .form-card {
   background: #fff;
@@ -960,6 +1012,12 @@ li {
 @media (min-width: 1024px) {
   .t-slide {
     flex-basis: 45%;
+  }
+}
+
+@media (max-width: 780px) {
+  .depoimentos {
+    padding: 20px 0;
   }
 }
 
