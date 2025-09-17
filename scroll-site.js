@@ -1,8 +1,8 @@
 (function () {
-  // Marca que JS está ativo (para o CSS condicional)
+  
   document.documentElement.classList.add('has-js');
 
-  const DURATION = 1000; // ← ajuste a velocidade (ms)
+  const DURATION = 1000; 
   const header = document.querySelector('.site-header');
   const HEADER_OFFSET = header ? header.offsetHeight + 8 : 0;
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -30,28 +30,28 @@
 
   const reveal = () => after && after.classList.add('show');
 
-  // Se abriu com hash (#contato etc.), já revela
+  
   if (location.hash) reveal();
 
-  // Observer para revelar quando sair do hero (se suportado)
+  
   if (hero && after && 'IntersectionObserver' in window) {
     const io = new IntersectionObserver(([entry]) => {
       if (!entry.isIntersecting) reveal();
     }, { threshold: 0.85 });
     io.observe(hero);
   } else {
-    // Sem suporte? Mostra tudo
+    
     reveal();
   }
 
-  // Fallbacks de interação: qualquer gesto revela
+  
   window.addEventListener('wheel', reveal, { passive: true, once: true });
   window.addEventListener('touchstart', reveal, { passive: true, once: true });
   window.addEventListener('keydown', (e) => {
     if (['ArrowDown', 'PageDown', ' '].includes(e.key)) reveal();
   }, { once: true });
 
-  // Botão da setinha
+ 
   btn?.addEventListener('click', (e) => {
     e.preventDefault();
     reveal();
@@ -59,7 +59,7 @@
     if (prefersReduced) window.scrollTo(0, y); else smoothScrollTo(y, DURATION);
   });
 
-  // Âncoras do site com rolagem lenta
+
   document.addEventListener('click', (e) => {
     const a = e.target.closest('a[href^="#"]:not([href="#"])');
     if (!a) return;
@@ -78,6 +78,6 @@
     history.pushState(null, '', id);
   });
 
-  // Segurança: se nada revelou em 1.2s, revela
+  
   setTimeout(reveal, 1200);
 })();

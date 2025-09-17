@@ -26,7 +26,7 @@ body {
 }
 
 .site-header .nav-wrap {
-  padding-block: 14px;
+  padding-block: 10px;
   min-height: unset;
 }
 
@@ -200,12 +200,7 @@ a {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 
-   
-    transform: translate3d(
-      0,
-      calc(-100% - 2px),
-      0
-    );
+    transform: translate3d(0, calc(-100% - 2px), 0);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -216,18 +211,18 @@ a {
     display: flex;
   }
   body.nav-open .nav {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
   .nav-wrap {
     justify-content: space-around;
   }
-}
-
-body.nav-open .nav {
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  .site-header .nav-wrap {
+    padding-block: 14px;
+    min-height: unset;
+  }
 }
 
 .hero {
@@ -326,7 +321,7 @@ body.nav-open .nav {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 10px 0 24px;
+    padding: 20px 0 24px;
   }
   .hero-features {
     grid-template-columns: 1fr;
@@ -852,6 +847,7 @@ p {
 @media (max-width: 1024px) {
   .contato-grid {
     grid-template-columns: 1fr;
+    padding: 20px 10px;
   }
   .grid-2 {
     grid-template-columns: 1fr;

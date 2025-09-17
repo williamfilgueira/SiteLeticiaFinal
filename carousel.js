@@ -3,7 +3,7 @@
   carousels.forEach(initCarousel);
 
   function initCarousel(root) {
-    const viewport = root.querySelector(".t-viewport");      // <- scroll container
+    const viewport = root.querySelector(".t-viewport");    
     const track = root.querySelector(".t-track");
     const slides = Array.from(root.querySelectorAll(".t-slide"));
     const prev = root.querySelector(".t-nav.prev");
@@ -11,10 +11,8 @@
     const dotsWrap = root.querySelector(".t-dots");
     const interval = Number(root.dataset.interval || 5000);
 
-    // guarda: se não tiver viewport/track, sai
     if (!viewport || !track || slides.length === 0) return;
 
-    // cria dots (com guarda)
     if (dotsWrap) {
       slides.forEach((_, i) => {
         const b = document.createElement("button");
@@ -41,7 +39,6 @@
       index = (i + slides.length) % slides.length;
       const target = slides[index];
 
-      // centraliza o slide no viewport
       const offset =
         target.offsetLeft - (viewport.clientWidth - target.clientWidth) / 2;
 
@@ -59,7 +56,6 @@
     next?.addEventListener("click", nextSlide);
     prev?.addEventListener("click", prevSlide);
 
-    // autoplay com “guardas”
     const prefersReduce = window
       .matchMedia("(prefers-reduced-motion: reduce)")
       .matches;
@@ -74,7 +70,6 @@
       }
     }
 
-    // pausa em interação do usuário
     root.addEventListener("mouseenter", stop);
     root.addEventListener("mouseleave", start);
     root.addEventListener("focusin", stop);
@@ -82,7 +77,6 @@
     root.addEventListener("pointerdown", stop);
     viewport.addEventListener("wheel", stop, { passive: true });
 
-    // só roda autoplay quando visível
     const io = new IntersectionObserver(
       (entries) => {
         visible = entries[0].isIntersecting;
@@ -92,7 +86,6 @@
     );
     io.observe(root);
 
-    // atualiza índice quando o usuário desliza manualmente
     let ticking = false;
     viewport.addEventListener("scroll", () => {
       if (ticking) return;
@@ -116,7 +109,6 @@
       ticking = true;
     });
 
-    // acessibilidade via teclado (setas)
     root.addEventListener("keydown", (e) => {
       if (e.key === "ArrowRight") {
         e.preventDefault();
